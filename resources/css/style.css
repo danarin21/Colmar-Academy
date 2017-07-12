@@ -1,0 +1,343 @@
+html,
+body {
+  font-size: 18px; /* 1 rem */
+  font-weight: normal;
+  font-family: sans-serif;
+  line-height: 1.4;
+  margin-top: 0;
+}
+
+p {
+  display: block;
+  color: grey;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+section {
+  display: block;
+}
+
+img .icon { /* revisit to edit fill */
+  fill: white;
+}
+
+.container { /* Site Content Width */
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+header {
+  height: 3.55rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d6d5dd;
+  color: black;
+}
+
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title img {
+  margin-left: 1.33rem;
+  color: white;
+}
+
+.menu-desktop li {
+  margin-right: 1.33rem;
+  display: inline;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+li,
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+/* Main Banner */
+
+.banner {
+  background-color: lavender;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.banner img.hero {
+  margin: 1.78rem 2.22rem 1.78rem 1.33rem;
+}
+
+.hero {
+  width: 60%;
+  height: auto;
+  vertical-align: top;
+}
+
+.feature-block {
+  display: block;
+  float: right;
+}
+
+.feature-block h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+}
+
+.feature-block p {
+  font-size: 1.2rem 3rem;
+  padding: 2rem 0;
+}
+
+.feature-block .button {
+  padding: .44rem 8rem;
+  color: whitesmoke;
+  background-color: royalblue;
+}
+
+/* Info Module */
+
+.information-module {
+  display: flex;
+  align-items: flex-start;
+  margin: 1.78rem 1.33rem;
+}
+
+.feature-1 {
+  width: 62%; /* adjusted to match image banner image */
+  padding-right: 1.33rem;
+}
+
+.feature-1 img.hero {
+  width: 100%;
+  height: auto;
+}
+
+.feature-1 h2 {
+  padding-top: 1.78rem;
+  padding-bottom: 1.33rem;
+}
+
+.feature-1 p {
+  padding-right: 1.33rem;
+  padding-bottom: 1.33rem;
+}
+
+.feature-1 span.caption {
+  font-size: .778rem;
+  color: grey;
+  font-style: italic;
+}
+
+/* Info Mod. card stacks */
+
+.card-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 23.5rem;
+}
+
+.card img {
+  width: 35%;
+  padding: .889rem;
+}
+
+.card-1 img {
+  padding-top: 0;
+}
+
+.card .info {
+  display: block;
+}
+
+.card .info p {
+  padding: .44rem 0;
+}
+
+.card .info a {
+  font-size: .889rem;
+  color: #00ace6;
+  opacity: .8;
+}
+
+/* Courses Module */
+
+.courses-module {
+  display: flex;
+  align-items: flex-start;
+  background-color: lavender;
+}
+
+.courses-module h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-top: 1.78rem;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.78rem 0;
+}
+
+.course {
+  display: block;
+  width: 18rem;
+  background-color: white;
+  margin: .44rem .44rem;
+}
+
+.course img {
+  width: 100%;
+}
+
+.course .details {
+  display: block;
+  margin: .89rem;
+}
+
+.course h3 {
+  padding-bottom: 8px;
+}
+
+.course span.tag {
+  font-size: .778rem;
+  color: grey;
+}
+
+.course p {
+  padding-top: 8px;
+  padding-bottom: 24px;
+}
+
+  /* Thesis Exhibit */
+
+.thesis-exhibit {
+    margin: 1.78rem 1.33rem;
+    display: block;
+}
+
+.thesis-exhibit h2 {
+    padding-bottom: 1.33rem;
+    text-align: center;
+}
+
+.thesis {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px black;
+}
+
+.feature-2 {
+    width: 62%; /* adjusted to match image banner image */
+    padding-right: 1.33rem;
+}
+
+.feature-2 video.vidHero {
+    width: 100%;
+    height: auto;
+}
+
+.feature-2 .vidHero {
+  width: 60%;
+  height: auto;
+  vertical-align: top;
+}
+
+.feature-2 h3 {
+    padding-top: 1.78rem;
+    padding-bottom: 1.33rem;
+}
+
+.feature-2 p {
+    padding-right: 1.33rem;
+    padding-bottom: 1.33rem;
+  }
+
+  /* Thesis card stacks */
+
+  .card-stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 23.5rem;
+  }
+
+  .card img {
+    width: 35%;
+    padding: .889rem;
+  }
+
+  .card-1 img {
+    padding-top: 0;
+  }
+
+  .card .info {
+    display: block;
+  }
+
+  .card .info p {
+    padding: .44rem 0;
+  }
+
+/* Footer */
+
+footer {
+  background-color: whitesmoke;
+  border-top: 1px solid grey;
+}
+
+footer .legal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.78rem 1.33rem;
+}
+
+footer a {
+  font-size: 14px;
+  color: grey;
+}
+
+footer .links a:nth-child(2n) {
+  padding-left: 8px;
+}
