@@ -1,6 +1,6 @@
 html,
 body {
-  font-size: 18px; /* 1 rem */
+  font-size: 16px; /* 1 rem */
   font-weight: normal;
   font-family: sans-serif;
   line-height: 1.4;
@@ -13,7 +13,7 @@ p {
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -30,7 +30,7 @@ img .icon { /* revisit to edit fill */
   fill: white;
 }
 
-.container { /* Site Content Width */
+.container { /* Site Content Width if needed */
   max-width: 1080px;
   margin: 0 auto;
 }
@@ -38,7 +38,7 @@ img .icon { /* revisit to edit fill */
 /* Header */
 
 header {
-  height: 3.55rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,12 +53,12 @@ header {
 }
 
 .title img {
-  margin-left: 1.33rem;
+  margin-left: 1.5rem;
   color: white;
 }
 
 .menu-desktop li {
-  margin-right: 1.33rem;
+  margin-right: 1.5rem;
   display: inline;
   align-items: center;
   justify-content: space-between;
@@ -88,7 +88,7 @@ a {
 }
 
 .banner img.hero {
-  margin: 1.78rem 2.22rem 1.78rem 1.33rem;
+  margin: 2rem 2.5rem 2rem 1.5rem;
 }
 
 .hero {
@@ -100,6 +100,7 @@ a {
 .feature-block {
   display: block;
   float: right;
+  padding-right: 1.5rem;
 }
 
 .feature-block h1 {
@@ -109,12 +110,11 @@ a {
 }
 
 .feature-block p {
-  font-size: 1.2rem 3rem;
   padding: 2rem 0;
 }
 
 .feature-block .button {
-  padding: .44rem 8rem;
+  padding: .5rem 9rem;
   color: whitesmoke;
   background-color: royalblue;
 }
@@ -124,12 +124,12 @@ a {
 .information-module {
   display: flex;
   align-items: flex-start;
-  margin: 1.78rem 1.33rem;
+  margin: 2rem 1.5rem;
 }
 
 .feature-1 {
   width: 62%; /* adjusted to match image banner image */
-  padding-right: 1.33rem;
+  padding-right: 1.5rem;
 }
 
 .feature-1 img.hero {
@@ -138,17 +138,17 @@ a {
 }
 
 .feature-1 h2 {
-  padding-top: 1.78rem;
-  padding-bottom: 1.33rem;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .feature-1 p {
-  padding-right: 1.33rem;
-  padding-bottom: 1.33rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .feature-1 span.caption {
-  font-size: .778rem;
+  font-size: .875rem;
   color: grey;
   font-style: italic;
 }
@@ -165,12 +165,12 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 23.5rem;
+  width: 26.4rem;
 }
 
 .card img {
   width: 35%;
-  padding: .889rem;
+  padding: 1rem;
 }
 
 .card-1 img {
@@ -182,11 +182,11 @@ a {
 }
 
 .card .info p {
-  padding: .44rem 0;
+  padding: .5rem 0;
 }
 
 .card .info a {
-  font-size: .889rem;
+  font-size: 1rem;
   color: #00ace6;
   opacity: .8;
 }
@@ -200,9 +200,9 @@ a {
 }
 
 .courses-module h2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: bold;
-  margin-top: 1.78rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -210,14 +210,14 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 1.78rem 0;
+  margin: 2rem 0;
 }
 
 .course {
   display: block;
   width: 18rem;
   background-color: white;
-  margin: .44rem .44rem;
+  margin: .5rem .5rem;
 }
 
 .course img {
@@ -226,32 +226,32 @@ a {
 
 .course .details {
   display: block;
-  margin: .89rem;
+  margin: 1rem;
 }
 
 .course h3 {
-  padding-bottom: 8px;
+  padding-bottom: .5rem;
 }
 
 .course span.tag {
-  font-size: .778rem;
+  font-size: .875rem;
   color: grey;
 }
 
 .course p {
-  padding-top: 8px;
-  padding-bottom: 24px;
+  padding-top: .5rem;
+  padding-bottom: 1.5rem;
 }
 
   /* Thesis Exhibit */
 
 .thesis-exhibit {
-    margin: 1.78rem 1.33rem;
+    margin: 2rem 1.5rem;
     display: block;
 }
 
 .thesis-exhibit h2 {
-    padding-bottom: 1.33rem;
+    padding-bottom: 1.5rem;
     text-align: center;
 }
 
@@ -263,7 +263,7 @@ a {
 
 .feature-2 {
     width: 62%; /* adjusted to match image banner image */
-    padding-right: 1.33rem;
+    padding-right: 1.5rem;
 }
 
 .feature-2 video.vidHero {
@@ -278,13 +278,13 @@ a {
 }
 
 .feature-2 h3 {
-    padding-top: 1.78rem;
-    padding-bottom: 1.33rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 .feature-2 p {
-    padding-right: 1.33rem;
-    padding-bottom: 1.33rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   /* Thesis card stacks */
@@ -299,12 +299,12 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 23.5rem;
+    width: 26.43rem;
   }
 
   .card img {
     width: 35%;
-    padding: .889rem;
+    padding: 1rem;
   }
 
   .card-1 img {
@@ -316,7 +316,7 @@ a {
   }
 
   .card .info p {
-    padding: .44rem 0;
+    padding: .5rem 0;
   }
 
 /* Footer */
@@ -330,14 +330,14 @@ footer .legal {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 1.78rem 1.33rem;
+  padding: 2rem 1.5rem;
 }
 
 footer a {
-  font-size: 14px;
+  font-size: .875rem;
   color: grey;
 }
 
 footer .links a:nth-child(2n) {
-  padding-left: 8px;
+  padding-left: .5rem;
 }
