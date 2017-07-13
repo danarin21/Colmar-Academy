@@ -46,7 +46,7 @@ header {
   color: black;
 }
 
-
+/* Desktop and Tablet */
 .title {
   display: flex;
   align-items: center;
@@ -71,12 +71,30 @@ a {
   text-decoration: none;
 }
 
-.menu-mobile {
+/* Mobile */
+nav.menu-mobile {
   display: none;
 }
 
-/* Main Banner */
+@media only screen and (max-width: 768px) {
+  .menu-desktop {
+    display: none;
+  }
 
+  .title {
+    display: none;
+  }
+
+  nav.menu-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 1.5rem;
+  }
+}
+
+/* Main Banner */
 .banner {
   background-color: lavender;
 }
@@ -88,13 +106,10 @@ a {
 }
 
 .banner img.hero {
-  margin: 2rem 2.5rem 2rem 1.5rem;
-}
-
-.hero {
   width: 60%;
   height: auto;
   vertical-align: top;
+  margin: 2rem 2.5rem 2rem 1.5rem;
 }
 
 .feature-block {
@@ -111,12 +126,50 @@ a {
 
 .feature-block p {
   padding: 2rem 0;
+  font-size: 1.5rem;
 }
 
 .feature-block .button {
-  padding: .5rem 9rem;
-  color: whitesmoke;
+  width: 100%;
+  padding: .5rem 0rem;
   background-color: royalblue;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.feature-block .button a {
+  color: whitesmoke;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+
+  .banner img.hero {
+    width: 100%;
+    min-height: 11.25rem;
+    margin: 0 auto;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .feature-block {
+    margin: 2rem 1rem;
+  }
+
+  .feature-block h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .feature-block p {
+    padding:
+  }
+
+  .feature-block .button {
+    width: 100%;
+  }
 }
 
 /* Info Module */
@@ -189,6 +242,32 @@ a {
   font-size: 1rem;
   color: #00ace6;
   opacity: .8;
+}
+
+/* Mobile Info */
+@media only screen and (max-width: 768px) {
+
+  .information-module {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .feature-1 {
+    display: none;
+  }
+
+  .card-stack {
+    justify-content: flex-start;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Courses Module */
