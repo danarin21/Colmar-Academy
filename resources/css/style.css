@@ -69,12 +69,17 @@ header {
   margin-left: 1.5rem;
 }
 
-.menu-desktop li {
+nav.menu-desktop li, a {
   margin-right: 1.5rem;
   display: inline;
   align-items: center;
   justify-content: space-between;
   list-style: none;
+  transition: #e64e60 1s linear;
+}
+
+nav.menu-desktop a:hover {
+  color: #e64e60;
 }
 
 /* Mobile */
@@ -106,7 +111,7 @@ nav.menu-mobile {
 
 /* Main Banner */
 .banner {
-  background-color: #f5f5f4;
+  background-color: #ededed;
 }
 
 .content {
@@ -144,10 +149,15 @@ nav.menu-mobile {
   background-color: #e64e60;
   text-align: center;
   line-height: 1.5rem;
+  transition: #1f2442 100ms linear;
 }
 
 .feature-block .button a {
   color: whitesmoke;
+}
+
+.feature-block .button:hover {
+  background-color: #1f2442;
 }
 
 /* Main Banner Mobile */
@@ -170,6 +180,10 @@ nav.menu-mobile {
   .feature-block h1 {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .feature-block p {
+    display: block;
   }
 
   .feature-block .button {
@@ -219,6 +233,7 @@ nav.menu-mobile {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: -1rem;
 }
 
 .card {
@@ -226,6 +241,11 @@ nav.menu-mobile {
   justify-content: flex-start;
   align-items: center;
   width: 26.4rem;
+  transition: lavender 2s ease-out;
+}
+
+.card:hover {
+  background-color: lavender;
 }
 
 img.desktop-thumbnail {
@@ -235,10 +255,6 @@ img.desktop-thumbnail {
 
 img.mobile-thumbnail {
   display: none;
-}
-
-.card-1 img {
-  padding-top: 0;
 }
 
 .card .info {
@@ -253,6 +269,11 @@ img.mobile-thumbnail {
   font-size: 1rem;
   color: #00ace6;
   opacity: .8;
+  transition: #016587 100ms linear;
+}
+
+.card .info a:hover {
+  color: #016587;
 }
 
 /* Info Mobile */
@@ -301,12 +322,13 @@ img.mobile-thumbnail {
 .courses-module {
   display: flex;
   align-items: flex-start;
-  background-color: #f5f5f4;
+  background-color: #1f2442;
 }
 
 .courses-module h2 {
   margin-top: 2rem;
   text-align: center;
+  color: whitesmoke;
 }
 
 .grid-desktop {
@@ -375,11 +397,6 @@ img.mobile-thumbnail {
     margin-bottom: .5rem;
   }
 
-  .tiles-mobile .button:hover {
-    color: #a03642;
-    transition: 100ms ease-out 100ms;
-  }
-
   .tiles-mobile h3 {
     text-align: left;
     color: whitesmoke;
@@ -440,15 +457,16 @@ img.mobile-thumbnail {
     justify-content: flex-start;
     align-items: center;
     width: 26.43rem;
+    transition: lavender 2s ease-out;
+  }
+
+  .thesis .cards:hover {
+    background-color: lavender;
   }
 
   .thesis .cards img {
     width: 35%;
     padding: 1rem;
-  }
-
-  .thesis .card-1 img {
-    padding-top: 0;
   }
 
   .thesis .card .info {
@@ -481,7 +499,7 @@ img.mobile-thumbnail {
 /* Footer */
 
 footer {
-  background-color: whitesmoke;
+  background-color: #ededed;
   border-top: 1px solid grey;
 }
 
@@ -489,13 +507,18 @@ footer .legal {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 2rem 1.5rem;
+  margin: 2rem 1.5rem 0 1.5rem;
   padding-bottom: 2rem;
 }
 
 footer a {
   font-size: .875rem;
   color: grey;
+  transition: underline 1s linear;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 footer .links a:nth-child(2n) {
